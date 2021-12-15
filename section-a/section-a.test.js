@@ -4,12 +4,23 @@ const {
     divide, 
     isDivisibleBy,
     gradeAssignment,
-    areaOrPerimeter
+    areaOrPerimeter 
 } = require("./section-a.js");
 
 // Section A 01. Write a smoke test
+test('passes when value is NaN', () => {
+    expect(NaN).toBeNaN();
+      expect(NaN).toBeNaN();
+      expect(1).not.toBeNaN();
+      expect(typeof NaN).toBe('number');
+  });
+  
 
 // Section A 02. Test the subtraction() function
+
+test("that the subtract() function", () => {
+    expect(subtract(20, 5)).toEqual(15)
+})
 // Feel free to delete all of the starter test block and make it better
 
 describe('Test the ', () => {
@@ -21,18 +32,32 @@ describe('Test the ', () => {
     });
 });
 
+
+// SECTION 3 
 // Section A 03. Test the divide() function
-// Feel free to delete all of the starter test block and make it better
-
-it('Should divide numbers and not allow division by 0', () => {
-
+test("that the divide() divides two given numbers", () => {
+    expect(divide(6, 3)).toEqual(2)
 });
+
+// Feel free to delete all of the starter test block and make it better
 
 // Section A 04. Test the isDivisibleBy() function
 
+test("that isDivisibleBy() checks is a number is divisible by another given number", () => {
+    expect(isDivisibleBy(10, 5, 5)).toBe(true),
+    expect(isDivisibleBy(30, 6, 5)).toBe(true)
+})
+
 // Section A 05. Test the areaOrPerimeter() function
 
+test("that the areaOrPerimeter() finds the area or perimeter", () => {
+        expect(areaOrPerimeter(5, 4)).toEqual(18),
+        expect(areaOrPerimeter(5, 20)).toEqual(50)
+
+});
+
 // Section A 06. Test the gradeAssignment() function
+
 
 // Section A 07. Test the disemvowel() function
 

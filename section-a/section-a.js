@@ -17,6 +17,16 @@ const isDivisibleBy = (number, a, b) => number % a === 0 && number % b === 0;
 // A05 - Pay attention to the fact that it is area OR perimeter
 const areaOrPerimeter = (l , w) => l === w ? l*w : 2*(l+w);
 
+
+// function areaOrPerimeter(x, y) {
+//     if (x === y) {
+//        return x * y
+//    } else {
+//        return 2 * (x + y)
+//    }
+// };
+
+
 // A06
 const gradeAssignment = (s1, s2, s3) => {
     let q=(s1+s2+s3)/3
@@ -53,5 +63,6 @@ module.exports = {
     subtract,
     divide,
     isDivisibleBy,
-    disemvowel
+    disemvowel,
+    areaOrPerimeter
 };
