@@ -19,7 +19,8 @@ test('passes when value is NaN', () => {
 // Section A 02. Test the subtraction() function
 
 test("that the subtract() function", () => {
-    expect(subtract(20, 5)).toEqual(15)
+    expect(subtract(20, 5)).toEqual(15),
+    expect(subtract(20, 10)).toEqual(10)
 })
 // Feel free to delete all of the starter test block and make it better
 
