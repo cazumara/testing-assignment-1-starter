@@ -52,7 +52,7 @@ test("that isDivisibleBy() checks is a number is divisible by another given numb
 
 test("that the areaOrPerimeter() finds the area or perimeter", () => {
         expect(areaOrPerimeter(5, 4)).toEqual(18),
-        expect(areaOrPerimeter(5, 20)).toEqual(50)
+        expect(areaOrPerimeter(5, 5)).toEqual(25)
 
 });
 
